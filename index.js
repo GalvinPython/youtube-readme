@@ -42,6 +42,7 @@ ${content.slice(endIndex)}`;
 		const proxyUrl = 'https://lastestvid.stats100.xyz';
 		const channelId = core.getInput('youtube_channel_id');
 		const readmeFilePath = core.getInput('readme_file_path');
+		console.log(channelId, readmeFilePath)
 
 		const videos = await getLatestVideos(proxyUrl, channelId);
 		await updateReadme(videos, readmeFilePath);
