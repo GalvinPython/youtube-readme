@@ -39,7 +39,7 @@ ${content.slice(endIndex)}`;
 
 (async () => {
 	try {
-		const proxyUrl = 'https://lastestvid.stats100.xyz';
+		const proxyUrl = 'https://latestvid.stats100.xyz';
 		const channelId = core.getInput('youtube_channel_id');
 		const readmeFilePath = core.getInput('readme_file_path');
 		console.log(channelId, readmeFilePath)
