@@ -1,0 +1,17 @@
+name: 'Update YouTube Readme'
+description: 'Fetches the latest YouTube videos from your channel and updates the README file to display them!.'
+inputs:
+  youtube_channel_id:
+    description: 'YouTube Channel ID'
+    required: true
+  readme_file_path:
+    description: 'Path to the README file'
+    required: true
+    default: 'README.md'
+outputs: {}
+runs:
+  using: 'node20'
+  main: 'index.js'
+branding:
+  icon: 'book'
+  color: 'blue'
