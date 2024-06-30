@@ -1,4 +1,4 @@
-name: 'Update YouTube Readme'
+name: 'YouTube Videos Readme'
 description: 'Fetches the latest YouTube videos from your channel and updates the README file to display them!.'
 inputs:
   youtube_channel_id:
