@@ -23,7 +23,7 @@ async function updateReadme(videos, readmeFilePath) {
 	const endMarker = '<!-- YOUTUBE:END -->';
 
 	const startIndex = content.indexOf(startMarker);
-	const endIndex = content.indexOf(endMarker) + endMarker.length;
+	const endIndex = content.indexOf(endMarker);
 
 	if (startIndex === -1 || endIndex === -1) {
 		core.setFailed("Markers for YouTube videos not found in README.");
@@ -42,7 +42,6 @@ ${content.slice(endIndex)}`;
 		const proxyUrl = 'https://latestvid.stats100.xyz';
 		const channelId = core.getInput('youtube_channel_id');
 		const readmeFilePath = core.getInput('readme_file_path');
-		console.log(channelId, readmeFilePath)
 
 		const videos = await getLatestVideos(proxyUrl, channelId);
 		await updateReadme(videos, readmeFilePath);
