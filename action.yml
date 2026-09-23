@@ -10,8 +10,8 @@ inputs:
     default: 'README.md'
 outputs: {}
 runs:
-  using: 'node20'
-  main: 'index.js'
+  using: 'node24'
+  main: 'dist/index.js'
 branding:
   icon: 'book'
   color: 'blue'

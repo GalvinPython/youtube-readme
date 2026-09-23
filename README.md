@@ -3,7 +3,7 @@ Updates your README file to show your latest video uploads on YouTube!
 
 # Example Usage
 > [!IMPORTANT]
-> This action uses NodeJS 20
+> This action uses NodeJS 24
 
 To use, simply create a file called `.github/workflows/main.yml` in your target repository. `main.yml` can be anything as long as it's a `.yml` file
 
@@ -20,12 +20,12 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: '20'
+        node-version: '24'
 
     - name: Update README
       uses: GalvinPython/youtube-readme@1.0
