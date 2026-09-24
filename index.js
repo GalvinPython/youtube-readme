@@ -1,6 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-const core = require('@actions/core');
+import fs from 'node:fs';
+import path from 'node:path';
+import * as core from '@actions/core';
 
 async function getLatestVideos(proxyUrl, channelId) {
 	const url = `${proxyUrl}/get/${channelId}/`;
